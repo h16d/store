@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ریمون | فروشگاه آنلاین</title>
+  <meta name="description" content="فروشگاه آنلاین ریمون — سرویس سریع، ضمانت اصالت کالا و پرداخت امن" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" data-nav="home">ریمون</a>
+      <nav class="nav">
+        <a href="#home" class="nav-link" data-nav="home">خانه</a>
+        <a href="#products" class="nav-link" data-nav="products">محصولات</a>
+        <a href="#about" class="nav-link" data-nav="about">درباره ما</a>
+        <a href="#contact" class="nav-link" data-nav="contact">تماس با ما</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="سبد خرید">
+          سبد خرید
+          <span class="cart-count" id="cartCount">۰</span>
+        </button>
+        <button class="login-btn" id="loginBtn">ورود</button>
+        <div class="user-box hidden" id="userBox">
+          <span class="user-name" id="userName"></span>
+          <button class="logout-btn" id="logoutBtn">خروج</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>فروشگاه آنلاین <span>ریمون</span></h1>
+            <p>خرید آسان و مطمئن؛ ارسال سریع به سراسر کشور، ضمانت اصالت کالا و پشتیبانی ۲۴ ساعته.</p>
+            <a href="#products" class="btn btn-primary" data-nav="products">مشاهده محصولات</a>
+          </div>
+          <div class="hero-art" aria-hidden="true">🛍️</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="features">
+          <div class="feature"><span>🚚</span><h3>ارسال سریع</h3><p>تحویل ۲ تا ۴ روز کاری در سراسر کشور</p></div>
+          <div class="feature"><span>✅</span><h3>ضمانت اصالت</h3><p>تضمین اصالت و سلامت کالا</p></div>
+          <div class="feature"><span>🔒</span><h3>پرداخت امن</h3><p>درگاه پرداخت مطمئن و رمزنگاری شده</p></div>
+          <div class="feature"><span>🎧</span><h3>پشتیبانی ۲۴ ساعته</h3><p>پاسخگویی در تمام ساعات شبانه‌روز</p></div>
+        </div>
+
+        <div class="section-head">
+          <h2>پرفروش‌ترین‌ها</h2>
+          <p>منتخبی از محصولات ویژه فروشگاه ریمون</p>
+        </div>
+        <div class="product-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section id="products" class="page">
+      <div class="container">
+        <div class="section-head">
+          <h2>محصولات</h2>
+          <p>۳ محصول منتخب فروشگاه</p>
+        </div>
+        <div class="product-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="page">
+      <div class="container narrow">
+        <div class="section-head">
+          <h2>درباره ما</h2>
+        </div>
+        <div class="card prose">
+          <p>فروشگاه آنلاین <strong>ریمون</strong> با هدف ارائه تجربه‌ای ساده، مطمئن و لذت‌بخش از خرید اینترنتی فعالیت خود را آغاز کرده است. ما با بهره‌گیری از تیمی متخصص، محصولاتی با کیفیت و قیمت مناسب را به سراسر کشور عرضه می‌کنیم.</p>
+          <p>در مسیر دریافت نماد اعتماد الکترونیکی (اینماد) هستیم و تمامی فعالیت‌های خود را مطابق با قوانین و مقررات جمهوری اسلامی ایران و چک‌لیست اینماد پیش می‌بریم.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="page">
+      <div class="container narrow">
+        <div class="section-head">
+          <h2>تماس با ما</h2>
+        </div>
+        <div class="card prose contact-box">
+          <div class="contact-row"><span>📞</span><p>تلفن پشتیبانی: <bdo dir="ltr">۰۲۱-۴۴۴۴۳۱۶۲</bdo></p></div>
+          <div class="contact-row"><span>✉️</span><p>ایمیل: <bdo dir="ltr">support@rimoon.ir</bdo></p></div>
+          <div class="contact-row"><span>🏢</span><p>آدرس: سردار جنگل، نبش خیابان هفت لنگ، پلاک ۱۱۷، واحد ۵</p></div>
+          <div class="contact-row"><span>🕒</span><p>ساعات پاسخگویی: شنبه تا پنجشنبه، ۹ صبح تا ۶ عصر</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LEGAL ===== -->
+    <section id="legal" class="page">
+      <div class="container narrow">
+        <div class="section-head">
+          <h2 id="legalTitle">قوانین و مقررات</h2>
+        </div>
+        <div class="card prose" id="legalContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>ریمون</h4>
+        <p>فروشگاه آنلاین با هدف ارائه محصولات با کیفیت و خدمات مطمئن.</p>
+      </div>
+      <div class="footer-col">
+        <h4>دسترسی سریع</h4>
+        <a href="#products" data-nav="products">محصولات</a>
+        <a href="#about" data-nav="about">درباره ما</a>
+        <a href="#contact" data-nav="contact">تماس با ما</a>
+      </div>
+      <div class="footer-col">
+        <h4>قوانین</h4>
+        <a href="#legal" data-legal="rules">قوانین و مقررات</a>
+        <a href="#legal" data-legal="privacy">حریم خصوصی</a>
+        <a href="#legal" data-legal="returns">شرایط بازگشت کالا</a>
+      </div>
+      <div class="footer-col">
+        <h4>نماد اعتماد</h4>
+        <div class="enamad-box">نماد اعتماد الکترونیکی<br /><small>به‌زودی</small></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© ۱۴۰۴ فروشگاه آنلاین ریمون — تمامی حقوق محفوظ است.</div>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سبد خرید">
+    <div class="cart-drawer-head">
+      <h3>سبد خرید</h3>
+      <button class="close-btn" id="closeCart" aria-label="بستن">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-drawer-foot">
+      <div class="cart-total-row">
+        <span>جمع کل</span>
+        <span class="cart-total" id="cartTotal">۰ تومان</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">ادامه و ثبت سفارش</button>
+      <button class="btn btn-ghost btn-block" id="clearCartBtn">خالی کردن سبد</button>
+    </div>
+  </aside>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div class="modal hidden" id="loginModal">
+    <div class="modal-box">
+      <button class="close-btn modal-close" id="closeLogin" aria-label="بستن">✕</button>
+      <h3>ورود به حساب کاربری</h3>
+      <p class="modal-sub">برای ثبت سفارش وارد شوید</p>
+      <form id="loginForm" autocomplete="off">
+        <label class="field">
+          <span>نام کاربری</span>
+          <input type="text" id="loginUser" placeholder="نام کاربری" required />
+        </label>
+        <label class="field">
+          <span>رمز عبور</span>
+          <input type="password" id="loginPass" placeholder="رمز عبور" required />
+        </label>
+        <p class="form-error hidden" id="loginError">نام کاربری یا رمز عبور اشتباه است.</p>
+        <button type="submit" class="btn btn-primary btn-block">ورود</button>
+      </form>
+      <p class="demo-hint">نسخه نمایشی — نام کاربری: <bdo dir="ltr">ebi</bdo> / رمز: <bdo dir="ltr">123456</bdo></p>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
